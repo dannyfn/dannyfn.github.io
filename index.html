@@ -7,20 +7,20 @@
   <meta name="description" content="Shenzhen Qianchong Technology Co., Ltd. provides Qualcomm-based embedded solutions, custom PCBA development, Android/Linux device customization, and hardware engineering support for global clients." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="INNOSZ home">
         <span class="brand-mark">IN</span>
         <span class="brand-text">INNOSZ</span>
       </a>
-      <nav class="menu">
+      <nav class="menu" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#strengths">Why Us</a>
+        <a href="#process">Process</a>
         <a href="#contact">Contact</a>
         <a class="lang-switch" href="cn.html">中文</a>
       </nav>
@@ -30,118 +30,137 @@
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy-wrap">
           <p class="eyebrow">Shenzhen Qianchong Technology Co., Ltd.</p>
-          <h1>Qualcomm-based embedded solutions and custom PCBA development for global hardware projects.</h1>
+          <h1>Qualcomm-based device engineering, from board to working product.</h1>
           <p class="hero-copy">
-            We help device brands, IoT companies, industrial terminal teams, and hardware startups bring products to market with practical engineering support across Qualcomm platforms, Android/Linux systems, and custom hardware development.
+            We support global hardware teams with custom PCBA development, embedded Android/Linux adaptation, BSP work, driver integration, and practical engineering collaboration around Qualcomm platforms.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Contact Us</a>
-            <a class="btn btn-secondary" href="#services">Explore Services</a>
+            <a class="btn btn-primary" href="#contact">Discuss a Project</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="stat">
-            <strong>Core Focus</strong>
-            <span>Qualcomm platform customization</span>
-          </div>
-          <div class="stat">
-            <strong>Delivery Scope</strong>
-            <span>PCBA, Android/Linux devices, BSP and engineering support</span>
-          </div>
-          <div class="stat">
-            <strong>Ideal Clients</strong>
-            <span>IoT, industrial, smart device, and embedded hardware teams</span>
-          </div>
-        </div>
+        <figure class="hero-visual">
+          <img src="assets/qc-hero.svg" alt="Abstract Qualcomm embedded hardware illustration" />
+        </figure>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container narrow">
-        <p class="section-tag">About</p>
-        <h2>Engineering-oriented support for custom device development.</h2>
-        <p>
-          INNOSZ, operated by Shenzhen Qianchong Technology Co., Ltd., is focused on custom solution development based on Qualcomm chip platforms. We support customers who need reliable engineering execution in embedded Android/Linux devices, hardware customization, board-level development, and technical outsourcing.
-        </p>
-        <p>
-          Our goal is simple: help clients move from concept to workable product faster, with practical communication, flexible customization, and solid technical collaboration.
-        </p>
+    <section id="about" class="section intro-section">
+      <div class="container split-grid">
+        <div>
+          <p class="section-tag">About</p>
+          <h2>Engineering-oriented support for custom device development.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            INNOSZ, operated by Shenzhen Qianchong Technology Co., Ltd., focuses on custom solution development based on Qualcomm chip platforms. We work with teams that need reliable execution across embedded systems, board-level customization, Android/Linux products, and product-specific technical outsourcing.
+          </p>
+          <p>
+            Our collaboration style is practical: clarify the product requirement, evaluate the technical path, then help move the project from concept to a workable device.
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="services" class="section section-alt">
-      <div class="container">
+      <div class="container section-head">
         <p class="section-tag">Services</p>
-        <h2>What we do</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Qualcomm Platform Customization</h3>
-            <p>Customized development based on Qualcomm chip platforms for smart devices, terminals, and embedded systems.</p>
-          </article>
-          <article class="card">
-            <h3>Custom PCBA Development</h3>
-            <p>Board-level design collaboration, hardware customization, prototype support, and product-oriented PCBA implementation.</p>
-          </article>
-          <article class="card">
-            <h3>Embedded Android & Linux Solutions</h3>
-            <p>Support for Android/Linux product development, system adaptation, peripheral integration, and software-hardware coordination.</p>
-          </article>
-          <article class="card">
-            <h3>BSP & Driver Support</h3>
-            <p>Engineering support for BSP adaptation, interface bring-up, peripheral drivers, and product-specific customization needs.</p>
-          </article>
-          <article class="card">
-            <h3>OEM / ODM Technical Support</h3>
-            <p>Technical collaboration for hardware brands, solution providers, and overseas customers seeking flexible development support.</p>
-          </article>
-          <article class="card">
-            <h3>Hardware Engineering Outsourcing</h3>
-            <p>Practical outsourcing support for teams that need experienced embedded development resources without building everything in-house.</p>
-          </article>
+        <h2>Focused capabilities for embedded hardware teams.</h2>
+      </div>
+      <div class="container cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Qualcomm Platform Customization</h3>
+          <p>Custom development for smart devices, terminals, and embedded products built around Qualcomm chip platforms.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Custom PCBA Development</h3>
+          <p>Board-level collaboration, hardware customization, prototype support, and product-oriented PCBA implementation.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Android & Linux Solutions</h3>
+          <p>System adaptation, peripheral integration, application environment setup, and software-hardware coordination.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">04</span>
+          <h3>BSP & Driver Support</h3>
+          <p>BSP adaptation, interface bring-up, peripheral driver work, and product-specific engineering support.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">05</span>
+          <h3>OEM / ODM Technical Support</h3>
+          <p>Flexible technical collaboration for hardware brands, solution providers, integrators, and overseas device teams.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">06</span>
+          <h3>Engineering Outsourcing</h3>
+          <p>Embedded development support for teams that need experienced resources without building every capability in-house.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section visual-section">
+      <div class="container visual-grid">
+        <figure class="media-card dark-media">
+          <img src="assets/qc-board.svg" alt="Minimal custom PCBA illustration" />
+        </figure>
+        <div>
+          <p class="section-tag">Why Us</p>
+          <h2>Built for practical B2B collaboration.</h2>
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>Customization mindset</h3>
+              <p>We are positioned for tailored projects instead of one-size-fits-all product selling.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Embedded system experience</h3>
+              <p>Our work centers on Qualcomm, Android, Linux, board support, driver integration, and product adaptation.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Global client fit</h3>
+              <p>Suitable for IoT teams, industrial device companies, smart hardware brands, and solution integrators.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="strengths" class="section">
-      <div class="container">
-        <p class="section-tag">Why Us</p>
-        <h2>Built for practical B2B collaboration</h2>
-        <div class="feature-grid">
-          <div class="feature">
-            <h3>Customization Mindset</h3>
-            <p>We are positioned for tailored projects instead of one-size-fits-all product selling.</p>
-          </div>
-          <div class="feature">
-            <h3>Embedded System Experience</h3>
-            <p>We focus on real engineering work around Qualcomm, Android, Linux, board support, and product adaptation.</p>
-          </div>
-          <div class="feature">
-            <h3>Global Client Fit</h3>
-            <p>Suitable for overseas hardware startups, IoT teams, industrial device companies, and solution integrators.</p>
-          </div>
-          <div class="feature">
-            <h3>Flexible Cooperation</h3>
-            <p>We support early discussions, solution assessment, customization planning, and project-oriented technical collaboration.</p>
+    <section id="process" class="section section-alt">
+      <div class="container visual-grid reverse">
+        <div>
+          <p class="section-tag">Process</p>
+          <h2>A clear path from requirement to prototype.</h2>
+          <div class="steps">
+            <div><strong>01</strong><span>Requirement discussion and feasibility review</span></div>
+            <div><strong>02</strong><span>Platform selection, hardware scope, and software plan</span></div>
+            <div><strong>03</strong><span>PCBA, BSP, driver, and system integration work</span></div>
+            <div><strong>04</strong><span>Prototype validation and project-oriented iteration</span></div>
           </div>
         </div>
+        <figure class="media-card">
+          <img src="assets/qc-flow.svg" alt="Simple engineering process illustration" />
+        </figure>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
+    <section class="section applications">
+      <div class="container section-head narrow center">
         <p class="section-tag">Applications</p>
-        <h2>Potential project scenarios</h2>
-        <div class="chips">
-          <span>Industrial terminals</span>
-          <span>IoT gateways</span>
-          <span>Smart display devices</span>
-          <span>Embedded Android products</span>
-          <span>Linux-based controllers</span>
-          <span>Custom smart hardware</span>
-          <span>OEM/ODM device projects</span>
-        </div>
+        <h2>Project scenarios we can support.</h2>
+        <p>Industrial terminals, IoT gateways, smart displays, embedded Android products, Linux controllers, OEM/ODM devices, and custom smart hardware.</p>
+      </div>
+      <div class="container chips">
+        <span>Industrial terminals</span>
+        <span>IoT gateways</span>
+        <span>Smart display devices</span>
+        <span>Embedded Android products</span>
+        <span>Linux-based controllers</span>
+        <span>Custom smart hardware</span>
+        <span>OEM / ODM device projects</span>
       </div>
     </section>
 
@@ -149,17 +168,17 @@
       <div class="container contact-box">
         <div>
           <p class="section-tag">Contact</p>
-          <h2>Let’s discuss your project.</h2>
+          <h2>Let’s discuss your device project.</h2>
           <p>
             If you are looking for a development partner for Qualcomm-based hardware, custom PCBA, or embedded Android/Linux products, we’d be glad to connect.
           </p>
         </div>
         <div class="contact-list">
-          <p><strong>Company:</strong> Shenzhen Qianchong Technology Co., Ltd.</p>
-          <p><strong>Brand Site:</strong> www.innosz.com</p>
-          <p><strong>GitHub Pages:</strong> dannyfn.github.io</p>
-          <p><strong>Email:</strong> your-email@company.com</p>
-          <p><strong>WhatsApp:</strong> To be added</p>
+          <p><strong>Company</strong><span>Shenzhen Qianchong Technology Co., Ltd.</span></p>
+          <p><strong>Brand Site</strong><span>www.innosz.com</span></p>
+          <p><strong>GitHub Pages</strong><span>dannyfn.github.io</span></p>
+          <p><strong>Email</strong><span>your-email@company.com</span></p>
+          <p><strong>WhatsApp</strong><span>To be added</span></p>
         </div>
       </div>
     </section>

@@ -7,20 +7,20 @@
   <meta name="description" content="深圳市千冲科技有限公司专注于基于高通平台的定制方案开发、PCBA 定制、嵌入式 Android/Linux 设备开发与硬件技术支持。" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="cn.html">
+      <a class="brand" href="cn.html" aria-label="INNOSZ 首页">
         <span class="brand-mark">IN</span>
         <span class="brand-text">INNOSZ</span>
       </a>
-      <nav class="menu">
+      <nav class="menu" aria-label="主导航">
         <a href="#about">关于我们</a>
         <a href="#services">服务内容</a>
-        <a href="#strengths">我们的优势</a>
+        <a href="#process">合作流程</a>
         <a href="#contact">联系我们</a>
         <a class="lang-switch" href="index.html">EN</a>
       </nav>
@@ -30,118 +30,137 @@
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy-wrap">
           <p class="eyebrow">深圳市千冲科技有限公司</p>
-          <h1>面向海外硬件项目的高通平台定制方案与 PCBA 开发支持。</h1>
+          <h1>从板级开发到产品落地的高通平台工程支持。</h1>
           <p class="hero-copy">
-            我们专注于基于高通芯片平台的定制开发，服务于 IoT 设备公司、工业终端团队、智能硬件品牌和海外硬件创业团队，提供从嵌入式 Android/Linux 到硬件定制与技术外包的工程支持。
+            我们为海外硬件团队提供高通平台定制、PCBA 开发、嵌入式 Android/Linux 适配、BSP、驱动集成和产品级工程协作。
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">联系我们</a>
+            <a class="btn btn-primary" href="#contact">沟通项目</a>
             <a class="btn btn-secondary" href="#services">查看服务</a>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="stat">
-            <strong>核心方向</strong>
-            <span>高通平台定制开发</span>
-          </div>
-          <div class="stat">
-            <strong>交付范围</strong>
-            <span>PCBA、Android/Linux 设备、BSP 与工程支持</span>
-          </div>
-          <div class="stat">
-            <strong>适合客户</strong>
-            <span>IoT、工业设备、智能终端与嵌入式硬件团队</span>
-          </div>
-        </div>
+        <figure class="hero-visual">
+          <img src="assets/qc-hero.svg" alt="高通嵌入式硬件抽象插画" />
+        </figure>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container narrow">
-        <p class="section-tag">关于我们</p>
-        <h2>专注工程落地的定制开发合作伙伴</h2>
-        <p>
-          INNOSZ 隶属于深圳市千冲科技有限公司，专注于基于高通芯片平台的定制方案开发。我们服务于需要嵌入式 Android/Linux 设备开发、硬件定制、板级开发及技术外包支持的客户。
-        </p>
-        <p>
-          我们的目标很明确：用务实的工程能力、灵活的定制方式和高效的沟通协作，帮助客户更快把产品从概念推进到可落地的成果。
-        </p>
+    <section id="about" class="section intro-section">
+      <div class="container split-grid">
+        <div>
+          <p class="section-tag">关于我们</p>
+          <h2>面向定制设备开发的工程型合作伙伴。</h2>
+        </div>
+        <div class="prose">
+          <p>
+            INNOSZ 隶属于深圳市千冲科技有限公司，专注于基于高通芯片平台的定制方案开发。我们服务于需要嵌入式系统、板级定制、Android/Linux 产品开发和技术外包支持的客户。
+          </p>
+          <p>
+            我们的协作方式很务实：先明确产品需求和可行路径，再围绕硬件、系统、驱动和产品验证推进项目落地。
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="services" class="section section-alt">
-      <div class="container">
+      <div class="container section-head">
         <p class="section-tag">服务内容</p>
-        <h2>我们可以提供什么</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>高通平台定制开发</h3>
-            <p>基于高通芯片平台，为智能终端、行业设备和嵌入式系统提供定制化开发支持。</p>
-          </article>
-          <article class="card">
-            <h3>PCBA 定制开发</h3>
-            <p>支持板级方案协作、硬件定制、原型验证以及面向产品落地的 PCBA 开发实现。</p>
-          </article>
-          <article class="card">
-            <h3>嵌入式 Android / Linux 方案</h3>
-            <p>支持 Android/Linux 产品开发、系统适配、外设集成以及软硬件协同工作。</p>
-          </article>
-          <article class="card">
-            <h3>BSP 与驱动支持</h3>
-            <p>提供 BSP 适配、接口 bring-up、外设驱动和产品级定制相关工程支持。</p>
-          </article>
-          <article class="card">
-            <h3>OEM / ODM 技术支持</h3>
-            <p>为硬件品牌、方案商及海外客户提供灵活的技术协作与定制开发支持。</p>
-          </article>
-          <article class="card">
-            <h3>硬件研发外包服务</h3>
-            <p>帮助客户以更轻量的方式获得嵌入式开发资源，降低自建团队成本与项目推进压力。</p>
-          </article>
+        <h2>为嵌入式硬件团队提供聚焦的工程能力。</h2>
+      </div>
+      <div class="container cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>高通平台定制开发</h3>
+          <p>基于高通芯片平台，为智能终端、行业设备和嵌入式产品提供定制开发支持。</p>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>PCBA 定制开发</h3>
+          <p>支持板级方案协作、硬件定制、原型验证以及面向产品落地的 PCBA 开发实现。</p>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Android / Linux 方案</h3>
+          <p>支持系统适配、外设集成、应用环境搭建以及软硬件协同工作。</p>
+        </article>
+        <article class="card">
+          <span class="card-number">04</span>
+          <h3>BSP 与驱动支持</h3>
+          <p>提供 BSP 适配、接口 bring-up、外设驱动和产品级定制相关工程支持。</p>
+        </article>
+        <article class="card">
+          <span class="card-number">05</span>
+          <h3>OEM / ODM 技术支持</h3>
+          <p>为硬件品牌、方案商、集成商和海外设备团队提供灵活的技术协作。</p>
+        </article>
+        <article class="card">
+          <span class="card-number">06</span>
+          <h3>工程研发外包</h3>
+          <p>帮助客户以更轻量的方式获得嵌入式开发资源，降低自建团队成本与推进压力。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section visual-section">
+      <div class="container visual-grid">
+        <figure class="media-card dark-media">
+          <img src="assets/qc-board.svg" alt="简洁 PCBA 插画" />
+        </figure>
+        <div>
+          <p class="section-tag">我们的优势</p>
+          <h2>适合海外 B2B 项目的务实协作方式。</h2>
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>定制导向</h3>
+              <p>我们更擅长围绕客户项目需求提供定制支持，而不是单一标准品销售。</p>
+            </div>
+            <div class="feature-item">
+              <h3>嵌入式工程经验</h3>
+              <p>聚焦高通、Android、Linux、板级支持、驱动集成和产品适配等实际工程工作。</p>
+            </div>
+            <div class="feature-item">
+              <h3>适配海外客户合作</h3>
+              <p>适合 IoT 团队、工业设备公司、智能硬件品牌和方案集成商。</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="strengths" class="section">
-      <div class="container">
-        <p class="section-tag">我们的优势</p>
-        <h2>适合海外 B2B 项目的务实协作方式</h2>
-        <div class="feature-grid">
-          <div class="feature">
-            <h3>定制导向</h3>
-            <p>我们更擅长围绕客户项目需求提供定制支持，而不是单一标准品销售。</p>
-          </div>
-          <div class="feature">
-            <h3>嵌入式工程能力</h3>
-            <p>聚焦高通、Android、Linux、板级支持和产品适配等实际工程工作。</p>
-          </div>
-          <div class="feature">
-            <h3>适配海外客户合作</h3>
-            <p>适合海外硬件创业团队、IoT 公司、工业终端厂商和方案集成商。</p>
-          </div>
-          <div class="feature">
-            <h3>合作方式灵活</h3>
-            <p>支持前期需求讨论、方案评估、定制规划以及项目型技术协作。</p>
+    <section id="process" class="section section-alt">
+      <div class="container visual-grid reverse">
+        <div>
+          <p class="section-tag">合作流程</p>
+          <h2>从需求到原型的清晰路径。</h2>
+          <div class="steps">
+            <div><strong>01</strong><span>需求沟通与可行性评估</span></div>
+            <div><strong>02</strong><span>平台选型、硬件范围和软件计划确认</span></div>
+            <div><strong>03</strong><span>PCBA、BSP、驱动和系统集成开发</span></div>
+            <div><strong>04</strong><span>原型验证与面向项目的迭代优化</span></div>
           </div>
         </div>
+        <figure class="media-card">
+          <img src="assets/qc-flow.svg" alt="简洁工程流程插画" />
+        </figure>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
+    <section class="section applications">
+      <div class="container section-head narrow center">
         <p class="section-tag">应用方向</p>
-        <h2>可覆盖的项目场景</h2>
-        <div class="chips">
-          <span>工业终端</span>
-          <span>IoT 网关</span>
-          <span>智能显示设备</span>
-          <span>嵌入式 Android 产品</span>
-          <span>Linux 控制设备</span>
-          <span>智能硬件定制</span>
-          <span>OEM/ODM 设备项目</span>
-        </div>
+        <h2>可覆盖的项目场景。</h2>
+        <p>工业终端、IoT 网关、智能显示设备、嵌入式 Android 产品、Linux 控制设备、OEM/ODM 设备和智能硬件定制项目。</p>
+      </div>
+      <div class="container chips">
+        <span>工业终端</span>
+        <span>IoT 网关</span>
+        <span>智能显示设备</span>
+        <span>嵌入式 Android 产品</span>
+        <span>Linux 控制设备</span>
+        <span>智能硬件定制</span>
+        <span>OEM / ODM 设备项目</span>
       </div>
     </section>
 
@@ -149,17 +168,17 @@
       <div class="container contact-box">
         <div>
           <p class="section-tag">联系我们</p>
-          <h2>欢迎沟通你的项目需求</h2>
+          <h2>欢迎沟通你的设备项目。</h2>
           <p>
             如果你正在寻找高通平台硬件开发、PCBA 定制或嵌入式 Android/Linux 产品开发合作伙伴，我们很乐意进一步交流。
           </p>
         </div>
         <div class="contact-list">
-          <p><strong>公司名称：</strong>深圳市千冲科技有限公司</p>
-          <p><strong>品牌站点：</strong>www.innosz.com</p>
-          <p><strong>GitHub Pages：</strong>dannyfn.github.io</p>
-          <p><strong>邮箱：</strong>your-email@company.com</p>
-          <p><strong>WhatsApp：</strong>待补充</p>
+          <p><strong>公司名称</strong><span>深圳市千冲科技有限公司</span></p>
+          <p><strong>品牌站点</strong><span>www.innosz.com</span></p>
+          <p><strong>GitHub Pages</strong><span>dannyfn.github.io</span></p>
+          <p><strong>邮箱</strong><span>your-email@company.com</span></p>
+          <p><strong>WhatsApp</strong><span>待补充</span></p>
         </div>
       </div>
     </section>
