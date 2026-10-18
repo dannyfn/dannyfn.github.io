@@ -1,164 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INNOSZ | OEM Smart Terminals & Qualcomm-Based Devices</title>
-  <meta name="description" content="Shenzhen Qianchong Technology Co., Ltd. is an OEM smart terminal company providing Qualcomm-based Android handhelds, industrial terminals and embedded smart devices." />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="深圳市千冲科技有限公司企业官网，介绍 QC 系列手持 PDA、工业平板、行业解决方案、公司介绍与联系信息。">
+    <title>千冲科技｜移动智能终端与行业解决方案</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/translations-en.js" defer></script>
+    <script src="js/i18n.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="INNOSZ home">
-        <span class="brand-mark">IN</span><span class="brand-text">INNOSZ</span>
-      </a>
-      <nav class="menu" aria-label="Main navigation">
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#capability">OEM Capability</a>
-        <a href="#applications">Applications</a>
-        <a href="odm.html">ODM</a>
-        <a href="#contact">Contact</a>
-        <a class="lang-switch" href="cn.html">中文</a>
-      </nav>
-    </div>
-  </header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="返回首页">
+                <img src="images/innosz_logo.png" alt="INNOSZ">
+                <span class="brand-copy">
+                    <strong>深圳市千冲科技有限公司</strong>
+                    <span>Enterprise Mobility</span>
+                </span>
+            </a>
+            <div class="language-switch" role="group" aria-label="Language" hidden>
+                <button type="button" data-language="zh-CN" lang="zh-CN" aria-pressed="true">中文</button>
+                <button type="button" data-language="en" lang="en" aria-pressed="false">EN</button>
+            </div><button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span></button>
+            <nav class="site-nav" aria-label="主导航">
+                <a href="#pda">产品中心</a>
+                <a href="#solutions">解决方案</a>
+                
+                <a href="#about">关于我们</a>
+                
+                <a class="button button--primary" href="#contact">联系我们</a>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section class="hero product-hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Shenzhen Qianchong Technology Co., Ltd.</p>
-          <h1>OEM smart terminals built on Qualcomm platforms.</h1>
-          <p class="lead">INNOSZ is positioned as an OEM company for Android smart terminals, industrial handhelds and embedded connected devices. We provide stable product references, flexible hardware options and practical engineering support for customer-branded devices.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#products">View Products</a>
-            <a class="btn btn-secondary" href="#contact">Contact Us</a>
-          </div>
-        </div>
-        <div class="hero-panel product-highlight" aria-label="OEM focus">
-          <div class="panel-title">OEM Focus</div>
-          <ul class="check-list">
-            <li>Customer-branded smart terminal products</li>
-            <li>Qualcomm-based Android device platforms</li>
-            <li>Industrial, retail and IoT application scenarios</li>
-            <li>Configuration, housing and accessory options</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="products" class="section section-light">
-      <div class="container">
-        <div class="section-title center">
-          <p class="section-tag">Products</p>
-          <h2>Representative OEM product series</h2>
-          <p class="section-intro">The following product concepts show typical OEM directions. Final specifications, certifications and availability should be confirmed by project.</p>
-        </div>
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-media"><div class="device mock-phone"><span>SM6350</span></div></div>
-            <div class="product-body">
-              <p class="product-chip">SM6350 Platform</p>
-              <h3>Q8 Rugged Smart Handheld</h3>
-              <p>High-performance Android handheld for field service, mobile data collection, logistics and connected workforce applications.</p>
-              <ul>
-                <li>Large touchscreen handheld form factor</li>
-                <li>Optional scan, NFC, camera and wireless modules</li>
-                <li>Suitable for premium OEM terminal projects</li>
-              </ul>
+    <main>
+        <section class="hero" id="matrix">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <span class="eyebrow" style="color:#58d8d4">QC PRODUCT MATRIX</span>
+                    <h1><span class="hero-line">为移动作业而生的</span><br><span class="hero-accent">智能终端矩阵</span></h1>
+                    <p>三档手持 PDA 与 SM6115 工业平板，覆盖高效数据采集和大屏现场协同，为仓储、零售、制造与巡检业务提供合适的设备选择。</p>
+                    <div class="hero-actions">
+                        <a class="button button--primary" href="#pda">浏览产品</a>
+                        <a class="button button--ghost" href="#compare">查看型号对比</a>
+                    </div>
+                    <div class="hero-stats" aria-label="产品矩阵概览">
+                        <div class="hero-stat"><strong>4</strong><span>核心产品型号</span></div>
+                        <div class="hero-stat"><strong>2</strong><span>移动终端形态</span></div>
+                        <div class="hero-stat"><strong>3</strong><span>PDA 性能档位</span></div>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-label="QC406 手持 PDA 与 QC606 工业平板合照">
+                    <div class="visual-orbit"></div>
+                    <img class="product-render hero-render--matrix" src="images/products/lineups/matrix-406-606-v1.webp" width="1536" height="1024" alt="QC406 手持 PDA 与薄型 QC606 工业平板正面组合图" fetchpriority="high" decoding="async">
+                    <span class="floating-chip floating-chip--one">Qualcomm 平台</span>
+                    <span class="floating-chip floating-chip--two">Android 企业终端</span>
+                </div>
             </div>
-          </article>
-          <article class="product-card">
-            <div class="product-media"><div class="device mock-terminal"><span>QCM4290</span></div></div>
-            <div class="product-body">
-              <p class="product-chip">QCM4290 Platform</p>
-              <h3>A5 Industrial Android Terminal</h3>
-              <p>Balanced industrial terminal platform for retail, warehouse, inspection and enterprise IoT applications.</p>
-              <ul>
-                <li>Android-based terminal reference design</li>
-                <li>Configurable display, keypad and accessory options</li>
-                <li>Designed for mid-range OEM product programs</li>
-              </ul>
+        </section>
+
+        <section class="section" id="pda">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="eyebrow">HANDHELD PDA</span><h2>QC 4 系手持 PDA</h2></div>
+                    <p>紧凑、坚固、易于携带，围绕扫码采集、实时连接和全天候移动作业构建。</p>
+                </div>
+                <div class="family-intro">
+                    <div class="family-visual family-visual--pda" aria-label="QC403、QC406 与 QC408 手持 PDA 产品图">
+                        <img class="product-render family-render--lineup" src="images/products/lineups/pda-fronts-v1.webp" width="1536" height="1024" alt="从左到右为 QC403、QC406、QC408，每款仅展示一个正面视角的 PDA 合照" loading="lazy" decoding="async">
+                    </div>
+                    <div class="family-copy">
+                        <span class="eyebrow">移动数据采集</span>
+                        <h3>一手掌握，现场数据即时流转</h3>
+                        <p>从基础盘点到 5G 关键业务，通过不同性能层级覆盖多种移动采集强度。</p>
+                        <ul class="check-list"><li>专业一维 / 二维扫码</li><li>工业级防护设计</li><li>可拆卸大容量电池</li><li>Android 企业应用生态</li></ul>
+                    </div>
+                </div>
+                <div class="product-grid">
+                    <a class="product-card" href="products/QC403/index.html">
+                        <div class="product-card-visual"><img class="product-render product-render--pda" src="images/products/qc403/hero-v7.webp" width="1254" height="1254" alt="QC403 深灰前后壳、窄银灰中框与青绿色按键的键盘式 PDA 概念图" loading="lazy" decoding="async"></div>
+                        <div class="product-card-body">
+                            <span class="tier-pill tier-pill--practical">实用型</span>
+                            <div class="product-card-title"><h3>QC403</h3><span class="chip-label">QCM2290</span></div>
+                            <p>触屏与实体按键结合，为仓储盘点、门店录入与快递收派提供可靠采集。</p>
+                            <div class="mini-features"><span>4G</span><span>4GB + 64GB</span><span>IP65</span></div>
+                            <span class="card-link">了解 QC403</span>
+                        </div>
+                    </a>
+                    <a class="product-card" href="products/QC406/index.html">
+                        <div class="product-card-visual"><img class="product-render product-render--pda" src="images/products/qc406/hero-v4.webp" width="1254" height="1254" alt="QC406 石墨灰机身、窄中框与小面积铜橙扫码键的正反面概念图" loading="lazy" decoding="async"></div>
+                        <div class="product-card-body">
+                            <span class="tier-pill tier-pill--balanced">均衡型</span>
+                            <div class="product-card-title"><h3>QC406</h3><span class="chip-label">SM6115</span></div>
+                            <p>SM6115 + Android 15，兼顾 4G 连接、专业扫码与现场防护。</p>
+                            <div class="mini-features"><span>4G</span><span>6GB + 128GB</span><span>IP67</span></div>
+                            <span class="card-link">了解 QC406</span>
+                        </div>
+                    </a>
+                    <a class="product-card" href="products/QC408/index.html">
+                        <div class="product-card-visual"><img class="product-render product-render--pda" src="images/products/qc408/hero-v2.webp" width="1254" height="1254" alt="QC408 银灰橙色手持 PDA 正反面概念图" loading="lazy" decoding="async"></div>
+                        <div class="product-card-body">
+                            <span class="tier-pill tier-pill--flagship">旗舰型</span>
+                            <div class="product-card-title"><h3>QC408</h3><span class="chip-label">QCM6490</span></div>
+                            <p>5G 旗舰移动终端，为复杂识读和关键业务提供更强处理能力。</p>
+                            <div class="mini-features"><span>5G</span><span>8GB + 128GB</span><span>IP68</span></div>
+                            <span class="card-link">了解 QC408</span>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </article>
-          <article class="product-card">
-            <div class="product-media"><div class="device mock-gateway"><span>QCM2290</span></div></div>
-            <div class="product-body">
-              <p class="product-chip">QCM2290 Platform</p>
-              <h3>E3 Compact Smart Device</h3>
-              <p>Compact connected device platform for entry-level smart terminals, small displays, gateways and cost-sensitive IoT products.</p>
-              <ul>
-                <li>Compact Android / Linux device direction</li>
-                <li>Flexible I/O and wireless configuration options</li>
-                <li>Suitable for entry OEM smart hardware projects</li>
-              </ul>
+        </section>
+
+        <section class="section section--soft" id="tablet">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="eyebrow">RUGGED TABLET</span><h2>QC606 工业平板</h2></div>
+                    <p>基于 Qualcomm SM6115 的中端工业平板，为制造、设备维保与车载作业提供均衡的大屏生产力。</p>
+                </div>
+                <a class="product-card product-card--featured" href="products/QC606/index.html">
+                    <div class="product-card-visual"><img class="product-render product-render--tablet" src="images/products/qc606/hero-v4.webp" width="1254" height="1254" alt="QC606 SM6115 薄型工业平板概念图" loading="lazy" decoding="async"></div>
+                    <div class="product-card-body">
+                        <span class="tier-pill tier-pill--balanced">均衡型 · 中端工业平板</span>
+                        <div class="product-card-title"><h3>QC606</h3><span class="chip-label">Qualcomm SM6115</span></div>
+                        <p>10.1 英寸 FHD 屏幕，清晰呈现工单、图纸和设备数据。兼顾现场多任务、移动连接与可靠防护，适合制造、维保和车载应用。</p>
+                        <div class="mini-features"><span>SM6115</span><span>4G</span><span>6GB + 128GB</span><span>IP67</span></div>
+                        <ul class="check-list"><li>10.1 英寸 FHD 触控屏</li><li>8000mAh 电池与快充</li><li>可选专业二维扫码模组</li><li>适配车载与巡检配件</li></ul>
+                        <span class="card-link">了解 QC606</span>
+                    </div>
+                </a>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section id="about" class="section">
-      <div class="container two-column">
-        <div class="section-title left">
-          <p class="section-tag">About INNOSZ</p>
-          <h2>An OEM partner for Qualcomm-based smart hardware.</h2>
-        </div>
-        <div class="text-block">
-          <p>INNOSZ is operated by Shenzhen Qianchong Technology Co., Ltd. The company focuses on OEM smart terminal products and embedded connected devices based on Qualcomm platforms.</p>
-          <p>We support customer-branded product programs with product references, hardware configuration, Android/Linux system adaptation, board-level coordination and production-oriented engineering communication.</p>
-        </div>
-      </div>
-    </section>
+        <section class="section" id="compare">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="eyebrow">MODEL COMPARISON</span><h2>快速找到合适型号</h2></div>
+                    <p>三档手持 PDA 与 SM6115 工业平板，便于按处理性能、屏幕尺寸和作业方式进行选型。</p>
+                </div>
+                <div class="comparison-wrap">
+                    <table class="comparison-table">
+                        <thead><tr><th>型号</th><th>形态</th><th>档位</th><th>芯片平台</th><th>网络</th><th>建议内存</th><th>防护</th><th>推荐场景</th></tr></thead>
+                        <tbody>
+                            <tr><td>QC403</td><td>手持 PDA</td><td>实用型</td><td>QCM2290</td><td>4G</td><td>4GB + 64GB</td><td>IP65</td><td>盘点、收派</td></tr>
+                            <tr><td>QC406</td><td>手持 PDA</td><td>均衡型</td><td>SM6115</td><td>4G</td><td>6GB + 128GB</td><td>IP67</td><td>仓储、制造</td></tr>
+                            <tr><td>QC408</td><td>手持 PDA</td><td>旗舰型</td><td>QCM6490</td><td>5G / Wi-Fi 6E</td><td>8GB + 128GB</td><td>IP68</td><td>关键移动业务</td></tr>
+                            <tr><td>QC606</td><td>工业平板</td><td>均衡型</td><td>SM6115</td><td>4G</td><td>6GB + 128GB</td><td>IP67</td><td>维保、车载</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
-    <section id="capability" class="section section-light">
-      <div class="container">
-        <div class="section-title center">
-          <p class="section-tag">OEM Capability</p>
-          <h2>From reference product to customer-branded device</h2>
-          <p class="section-intro">Our homepage focuses on OEM supply and product delivery support. For deeper ODM development services, please visit the ODM page.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card"><span>01</span><h3>Product Configuration</h3><p>Selection of platform, memory, storage, display, camera, scanner, wireless module and accessory options by project need.</p></article>
-          <article class="service-card"><span>02</span><h3>Customer Branding</h3><p>Support for customer logo, appearance details, packaging direction and market-specific product presentation.</p></article>
-          <article class="service-card"><span>03</span><h3>System Adaptation</h3><p>Android/Linux image configuration, peripheral adaptation, app environment setup and practical device bring-up support.</p></article>
-          <article class="service-card"><span>04</span><h3>Manufacturing Coordination</h3><p>Engineering coordination around prototype preparation, sample validation and production communication.</p></article>
-          <article class="service-card"><span>05</span><h3>Documentation Support</h3><p>Product information, specification drafts, user-facing materials and project documentation support after confirmation.</p></article>
-          <article class="service-card"><span>06</span><h3>After-Sales Engineering</h3><p>Issue analysis, software/hardware coordination and technical communication for customer product programs.</p></article>
-        </div>
-      </div>
-    </section>
+        <section class="section section--dark" id="solutions">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="eyebrow" style="color:#58d8d4">SOLUTIONS</span><h2>面向行业现场的解决方案</h2></div>
+                    <p>从设备选型、数据采集到软件适配，为不同岗位提供稳定、清晰的移动业务入口。</p>
+                </div>
+                <div class="industry-grid">
+                    <article class="industry-card"><span class="industry-icon">01</span><h3>智慧仓储与物流</h3><p>覆盖入库、上架、拣选、复核、盘点和配送状态采集，减少纸面记录与重复录入。</p><a class="solution-link" href="#contact">咨询方案 →</a></article>
+                    <article class="industry-card"><span class="industry-icon">02</span><h3>智能制造</h3><p>连接物料追踪、生产报工、质量追溯和设备点检，让现场数据及时进入管理系统。</p><a class="solution-link" href="#contact">咨询方案 →</a></article>
+                    <article class="industry-card"><span class="industry-icon">03</span><h3>连锁零售</h3><p>支持门店收货、库存盘点、价格核验、商品查询和跨门店协同。</p><a class="solution-link" href="#contact">咨询方案 →</a></article>
+                    <article class="industry-card"><span class="industry-icon">04</span><h3>移动巡检</h3><p>将任务接收、现场拍照、数据填写、异常上报和处理闭环集中到移动终端。</p><a class="solution-link" href="#contact">咨询方案 →</a></article>
+                    <article class="industry-card"><span class="industry-icon">05</span><h3>医疗移动业务</h3><p>面向样本、物资、患者信息和护理任务，提供清晰可靠的移动核验入口。</p><a class="solution-link" href="#contact">咨询方案 →</a></article>
+                    <article class="industry-card"><span class="industry-icon">06</span><h3>公共事业与能源</h3><p>适配能源、交通和公共设施现场的工单、巡查、资产与应急任务。</p><a class="solution-link" href="#contact">咨询方案 →</a></article>
+                </div>
+            </div>
+        </section>
 
-    <section id="applications" class="section">
-      <div class="container">
-        <div class="section-title center"><p class="section-tag">Applications</p><h2>Typical application scenarios</h2></div>
-        <div class="industry-row">
-          <span>Warehouse & logistics</span><span>Retail operations</span><span>Field service</span><span>Industrial inspection</span><span>IoT gateways</span><span>Smart display devices</span>
-        </div>
-      </div>
-    </section>
+        <section class="section" id="about">
+            <div class="container">
+                <div class="about-company-grid">
+                    <div class="about-visual">
+                        <span class="about-orbit about-orbit--one"></span>
+                        <span class="about-orbit about-orbit--two"></span>
+                        <div class="about-mark"><small>INNOSZ</small><strong>让现场数据<br>连接业务价值</strong></div>
+                    </div>
+                    <div class="about-copy">
+                        <span class="eyebrow">ABOUT INNOSZ</span>
+                        <h2>关于千冲科技</h2>
+                        <p class="about-lead">专注移动终端，让现场作业更高效。</p>
+                        <p>深圳市千冲科技有限公司专注于手持 PDA 与工业平板，面向仓储物流、零售、制造与设备维保等场景，提供移动数据采集与现场作业终端。我们关注每一次扫描、每一项任务和每一处使用细节，让信息采集更便捷，让业务协同更顺畅。</p>
+                        <p>围绕高通硬件平台与 Android 应用生态，我们结合条码识读、无线连接与工业防护设计，从产品选型、系统适配到结构与配件定制，为客户规划贴合实际工作流程的终端方案。</p>
+                        <a class="button button--dark" href="#contact">与我们探讨您的项目</a>
+                    </div>
+                </div>
+                <div class="capability-grid">
+                    <article class="capability-card"><span>01</span><h3>终端产品规划</h3><p>结合工作负载、使用环境与预算，匹配芯片平台、采集方式和终端配置。</p></article>
+                    <article class="capability-card"><span>02</span><h3>OEM / ODM 定制</h3><p>围绕外观、结构、接口与配件，规划兼顾现场使用和品牌需求的定制方案。</p></article>
+                    <article class="capability-card"><span>03</span><h3>系统与采集适配</h3><p>衔接 Android 应用、扫码模组与外设接口，让终端融入客户现有业务流程。</p></article>
+                    <article class="capability-card"><span>04</span><h3>项目导入支持</h3><p>从需求梳理、样机验证到配置确认与批量导入，协同推进项目的各个阶段。</p></article>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="section-title center">
-          <p class="section-tag">Contact</p><h2>Contact us for OEM smart terminal projects</h2>
-          <p class="section-intro">For customer-branded smart terminals and Qualcomm-based connected devices, please contact us to discuss product direction and configuration.</p>
-        </div>
-        <div class="contact-card"><dl>
-          <div><dt>Company</dt><dd>Shenzhen Qianchong Technology Co., Ltd.</dd></div>
-          <div><dt>Brand</dt><dd>INNOSZ</dd></div>
-          <div><dt>Website</dt><dd>www.innosz.com</dd></div>
-          <div><dt>Email</dt><dd>your-email@company.com</dd></div>
-          <div><dt>Phone / WhatsApp</dt><dd>Available upon request</dd></div>
-          <div><dt>Address</dt><dd>Shenzhen, Guangdong, China</dd></div>
-        </dl></div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer"><div class="container footer-wrap"><p>© <span id="year"></span> INNOSZ · Shenzhen Qianchong Technology Co., Ltd.</p><a href="cn.html">中文版本</a></div></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-copy"><span class="eyebrow">CONTACT US</span><h2>联系我们</h2><p>如果您正在规划移动数据采集、工业平板或行业终端项目，请告诉我们应用场景、软件需求、环境条件和预计规模。</p><a class="button button--dark" href="mailto:eric@szqcltd.com">发送邮件咨询</a></div>
+                <div class="contact-cards">
+                    <article><span>产品选型</span><strong>匹配产品档位与配置</strong><p>根据应用强度、网络、扫码、防护和续航需求提供选型建议。</p></article>
+                    <article><span>项目合作</span><strong>OEM / ODM 与行业定制</strong><p>沟通硬件、结构、配件、软件和批量交付需求。</p></article>
+                    <article><span>联系信息</span><strong>eric@szqcltd.com</strong><p>深圳市南山区软件产业基地6栋708</p></article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-about">
+                    <a class="brand" href="index.html"><img src="images/innosz_logo.png" alt="INNOSZ"><span class="brand-copy"><strong>深圳市千冲科技有限公司</strong><span>Enterprise Mobility</span></span></a>
+                    <p>面向仓储、零售、制造、巡检等行业，提供移动智能硬件与数字化终端产品。</p>
+                </div>
+                <div class="footer-col"><h3>产品系列</h3><a href="#pda">QC 4 系手持 PDA</a><a href="#tablet">QC606 工业平板</a><a href="#compare">型号对比</a></div>
+                <div class="footer-col"><h3>企业信息</h3><a href="#solutions">解决方案</a><a href="#about">关于我们</a></div>
+                <div class="footer-col"><h3>联系我们</h3><a href="mailto:eric@szqcltd.com">eric@szqcltd.com</a><span>深圳市南山区软件产业基地6栋708</span></div>
+            </div>
+            <div class="footer-bottom"><span>© <span data-current-year>2026</span> 深圳市千冲科技有限公司</span></div>
+        </div>
+    </footer>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
