@@ -143,14 +143,21 @@ html[lang="en"] h2, html[lang="en"] h3 { overflow-wrap: break-word; }
 }
 .visual-orbit::before, .visual-orbit::after { position: absolute; border: 1px solid rgba(255,255,255,.08); border-radius: inherit; content: ""; }
 .visual-orbit::before { inset: 42px; } .visual-orbit::after { inset: 96px; }
-.hero-render--matrix { width: 100%; height: 480px; }
+/* Reuse the approved product renders, with proportional crops and rigid rotation. */
+.hero-matrix { position: relative; z-index: 2; width: 100%; max-width: 520px; aspect-ratio: 1; }
+.hero-matrix-device { position: absolute; display: block; overflow: hidden; filter: drop-shadow(0 24px 20px rgba(0, 0, 0, .38)); }
+.hero-matrix-device img { position: absolute; display: block; max-width: none; height: auto; }
+.hero-matrix-device--tablet { width: 84%; aspect-ratio: 1180 / 940; left: 10.5%; top: 9%; transform: rotate(-8deg); }
+.hero-matrix-device--tablet img { width: 106.271186%; left: -3.813559%; top: -15.957447%; }
+.hero-matrix-device--pda { z-index: 1; width: 30%; aspect-ratio: 510 / 1100; left: 5%; top: 29%; transform: rotate(9deg); }
+.hero-matrix-device--pda img { width: 245.882353%; left: -121.568627%; top: -5.454545%; }
 .floating-chip {
     position: absolute; z-index: 5; display: flex; align-items: center; gap: 10px; padding: 12px 16px;
     border: 1px solid rgba(255,255,255,.16); border-radius: 99px; color: #dce8ed;
     background: rgba(14,34,48,.84); box-shadow: 0 16px 40px rgba(0,0,0,.25); backdrop-filter: blur(12px); font-size: 12px; font-weight: 800;
 }
 .floating-chip::before { width: 8px; height: 8px; border-radius: 50%; background: #58d8d4; box-shadow: 0 0 0 5px rgba(88,216,212,.13); content: ""; }
-.floating-chip--one { top: 30px; right: 20px; } .floating-chip--two { bottom: 28px; left: 18px; }
+.floating-chip--one { top: 16px; right: 20px; } .floating-chip--two { bottom: 14px; right: 6px; }
 .family-intro {
     display: grid; grid-template-columns: 1.2fr .8fr; gap: 48px; align-items: center;
     margin-bottom: 36px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff;
@@ -162,7 +169,16 @@ html[lang="en"] h2, html[lang="en"] h3 { overflow-wrap: break-word; }
 .family-visual .product-render { width: min(100%, 340px); height: 300px; }
 .family-visual .product-render--tablet { width: min(100%, 400px); }
 .family-visual--pda { min-height: 340px; padding: 12px; }
-.family-visual--pda .family-render--lineup { width: 100%; height: auto; max-height: 340px; }
+/* Crop the approved front views; rotate each rigid crop without stretching it. */
+.pda-lineup { position: relative; width: 100%; max-width: 520px; aspect-ratio: 1536 / 1100; }
+.pda-lineup-device { position: absolute; display: block; overflow: hidden; transform-origin: center; }
+.pda-lineup-device img { position: absolute; display: block; max-width: none; height: auto; }
+.pda-lineup-device--qc403 { width: 19.53125%; aspect-ratio: 420 / 910; left: 18.88021%; top: 6.81818%; transform: rotate(30deg); }
+.pda-lineup-device--qc403 img { width: 365.714286%; left: -17.857143%; top: -6.593407%; }
+.pda-lineup-device--qc406 { width: 19.53125%; aspect-ratio: 410 / 870; left: 61.84896%; top: 7.38636%; transform: rotate(-30deg); }
+.pda-lineup-device--qc406 img { width: 374.634146%; left: -129.268293%; top: -10.344828%; }
+.pda-lineup-device--qc408 { width: 22.13542%; aspect-ratio: 500 / 915; left: 38.93229%; top: 49.44545%; transform: rotate(80deg); }
+.pda-lineup-device--qc408 img { width: 307.2%; left: -196%; top: -4.918033%; }
 .family-copy h3 { margin: 12px 0 16px; color: var(--ink); font-size: clamp(30px,4vw,46px); line-height: 1.1; }
 .family-copy > p { color: var(--muted); }
 .check-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 20px; margin-top: 24px; list-style: none; }
@@ -326,7 +342,7 @@ html[lang="en"] h2, html[lang="en"] h3 { overflow-wrap: break-word; }
     .nav-enhanced .site-nav { position: absolute; top: calc(100% + 1px); right: 20px; left: 20px; display: none; margin: 0; padding: 18px; box-shadow: var(--shadow); }
     .nav-enhanced .site-nav.is-open { display: flex; } .site-nav > a:not(.button) { padding: 10px 8px; } .nav-enhanced .menu-toggle { display: block; }
     .hero-inner, .product-hero-grid, .section-heading, .family-intro, .spec-layout, .about-company-grid, .contact-grid { grid-template-columns: 1fr; }
-    .hero-inner { padding-top: 76px; } .hero-visual { min-height: 470px; } .hero-render--matrix { height: 440px; }
+    .hero-inner { padding-top: 76px; } .hero-visual { min-height: 470px; }
     .product-grid, .feature-grid, .industry-grid, .scenario-grid, .capability-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
     .spec-aside { position: static; } .model-switcher { grid-template-columns: repeat(3,minmax(0,1fr)); }
     .footer-main { grid-template-columns: 1fr 1fr 1fr; } .footer-about { grid-column: 1 / -1; }
@@ -343,7 +359,7 @@ html[lang="en"] h2, html[lang="en"] h3 { overflow-wrap: break-word; }
     .brand-copy { display: none; } .brand img { height: 31px; }
     .hero, .hero-inner { min-height: auto; } .hero-inner { gap: 22px; padding: 64px 0 54px; } .hero-copy h1 { font-size: 39px; }
     .hero-stats { gap: 18px; } .hero-visual { min-height: 340px; }
-    .visual-orbit { width: min(100%,360px); height: auto; aspect-ratio: 1; } .hero-render--matrix { height: auto; max-height: 360px; }
+    .visual-orbit { width: min(100%,360px); height: auto; aspect-ratio: 1; }
     .section-heading { gap: 18px; margin-bottom: 32px; } .family-intro { gap: 24px; padding: 18px; } .family-visual { min-height: 230px; }
     .family-visual--pda { min-height: 0; padding: 6px; }
     .check-list, .product-grid, .feature-grid, .industry-grid, .scenario-grid, .key-metrics, .capability-grid { grid-template-columns: 1fr; }
