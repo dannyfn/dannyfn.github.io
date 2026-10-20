@@ -24,11 +24,17 @@
                 <button type="button" data-language="en" lang="en" aria-pressed="false">EN</button>
             </div><button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span></button>
             <nav class="site-nav" aria-label="主导航">
-                <a href="#pda">产品中心</a>
+                <div class="nav-dropdown">
+                    <a class="nav-dropdown-toggle" href="#pda" aria-haspopup="true">产品中心 <span aria-hidden="true">⌄</span></a>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="products/QC403/index.html" role="menuitem"><strong>QC403</strong><small>QCM2290 · 4G</small></a>
+                        <a href="products/QC406/index.html" role="menuitem"><strong>QC406</strong><small>SM6115 · 4G</small></a>
+                        <a href="products/QC408/index.html" role="menuitem"><strong>QC408</strong><small>QCM6490 · 5G</small></a>
+                        <a href="products/QC606/index.html" role="menuitem"><strong>QC606</strong><small>SM6115 · Rugged Tablet</small></a>
+                    </div>
+                </div>
                 <a href="#solutions">解决方案</a>
-                
                 <a href="#about">关于我们</a>
-                
                 <a class="button button--primary" href="#contact">联系我们</a>
             </nav>
         </div>
